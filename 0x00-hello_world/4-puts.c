@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - My first program that outputs a line of text
  *
