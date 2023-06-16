@@ -4,7 +4,7 @@
 /**
  * main - Second project under if and while loops
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
