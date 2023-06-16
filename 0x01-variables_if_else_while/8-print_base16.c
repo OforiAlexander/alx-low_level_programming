@@ -8,15 +8,21 @@ int main(void)
 {
 	int a;
 
-	for (a = 0; a < 16; a++)
-		if (a < 10)
+	char b;
+
+	a = 0;
+	b = 'a';
+	while
+		(a < 10)
 		{
-			putchar('0' + a);
+			putchar(a + '0');
+			a++;
 		}
-		else
+	while
+		(b <= 16)
 		{
-	putchar('a' + a);
+			putchar(b);
+			b++;
 		}
-	putchar('\n');
 	return (0);
 }
