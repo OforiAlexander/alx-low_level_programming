@@ -6,20 +6,20 @@
  */
 int main(void)
 {
-int a;
-char b;
-a = 0;
-b = 'a';
-while (a < 10)
-{
-putchar('0' + a);
-a++;
-}
-while (b <= 'f')
-{
-putchar(b);
-b++;
-}
-return (0);
+	char a;
+
+	int b;
+
+	for (b = 0; b < 10; b++)
+	{
+		putchar(b);
+	}
+
+	for (a = 'a'; a >= 'f'; a++)
+	{
+		putchar(a);
+	}
+	putchar('\n');
+	return (0);
 }
 
