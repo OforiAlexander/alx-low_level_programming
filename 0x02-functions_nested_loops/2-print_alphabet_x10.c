@@ -11,16 +11,17 @@ void print_alphabet_x10(void)
 
 	cx = 0;
 
-	while (cx <= 0)
+	while (cx < 10)
 	{
-		char c;
-	c = 'a';
-	while (c <= 'z')
-	{
-		_putchar(c);
-	c++;
-	}
-	_putchar('\n');
-	cx++;
+		char j;
+
+		j = 'a';
+		while (j <= 'z')
+		{
+			_putchar(j);
+		j++;
+		}
+		_putchar('\n');
+		cx++;
 	}
 }
