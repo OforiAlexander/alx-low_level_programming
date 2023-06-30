@@ -3,8 +3,8 @@
  * reverse_array - this  function that reverses the content of an
  * array of integers.
  * @a: array
- *
- * return: void;
+ *@n: number of alements of array
+ * Return: void;
  */
 void reverse_array(int *a, int n)
 {

@@ -1,9 +1,11 @@
 #include "main.h"
 /**
- * _strncpy - this copies a string.
+ * _strncpy - copies a string.
  * @dest: holds the value
  * @src: holds the value
  * @n: holdes the value
+ *
+ * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
