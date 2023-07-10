@@ -2,42 +2,42 @@
 #include "main.h"
 
 /**
- * _atoi - this  program that multiplies two numbers.
+ * _atoi - converts a string to an integer
  * @s: string to be converted
  *
  * Return: the int converted from the string
  */
 int _atoi(char *s)
 {
-	int a, b, n, c, f, number;
+	int i, d, n, len, f, digit;
 
-	a = 0;
-	b = 0;
+	i = 0;
+	d = 0;
 	n = 0;
-	c = 0;
+	len = 0;
 	f = 0;
-	number = 0;
+	digit = 0;
 
-	while (s[c] != '\0')
-		c++;
+	while (s[len] != '\0')
+		len++;
 
-	while (a < c && f == 0)
+	while (i < len && f == 0)
 	{
-		if (s[a] == '-')
-			++b;
+		if (s[i] == '-')
+			++d;
 
-		if (s[a] >= '0' && s[a] <= '9')
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			number = s[a] - '0';
-			if (b % 2)
-				number = -number;
-			n = n * 10 + number;
-			f = a;
-			if (s[a + 1] < '0' || s[a + 1] > '9')
+			digit = s[i] - '0';
+			if (d % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
 			f = 0;
 		}
-		a++;
+		i++;
 	}
 
 	if (f == 0)
@@ -47,7 +47,7 @@ int _atoi(char *s)
 }
 
 /**
- * main - this multiplies two numbers
+ * main - multiplies two numbers
  * @argc: number of arguments
  * @argv: array of arguments
  *
